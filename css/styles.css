@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+
+    background-color: rgb(228, 109, 109);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main body frame of PS1 Controller */
+.corpo{
+    background-color: lightgrey;
+    width: 30em;
+    height: 10em;
+}
+
+
+
+.roundAreas{
+    background-color: lightgrey;
+    width: 15em;
+    height: 15em;
+    border-radius: 100%;
+}
+
+#roundLeft{
+    position: relative;
+    bottom: 25%;
+    right: 15%;
+
+    z-index: 1;
+}
+
+#roundRight{
+    position: relative;
+    bottom: 175%;
+    left: 65%;
+
+    z-index: 1;
+}
+
+.analogs{
+    position: relative;
+
+    background-color: black;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 15px;
+
+    z-index: 3;
+}
+
+#analogLeft{
+    bottom: 240%;
+    left: 20%
+}
+
+#analogRight{
+    bottom: 319%;
+    left: 55%
+}
+
+.bumpers{
+    position: relative;
+
+    background-color: grey;
+    width: 8em;
+    height: 3em;
+    border-radius: 20%;
+}
+
+#bumperLeft{
+    bottom: 490%;
+    right: 4%
+}
+
+#bumperRight{
+    bottom: 520%;
+    left: 77%
+}
+
+.grips{
+    position: relative;
+
+    background-color: lightgrey;
+    width: 11em;
+    height: 17em;
+
+    border-radius: 45%;
+}
+
+#gripLeft{
+    transform: rotate(10deg);
+    bottom: 500%;
+    right: 15%;
+}
+
+#gripRight{
+    transform: rotate(-10deg);
+    bottom: 668%;
+    left: 79%
+}
+
+/* Numpad and each directional button */
+.numpad{
+    position: relative;
+
+    background-color: black;
+    width: 3em;
+    height: 3em;
+
+    border-radius: 15%;
+    z-index: 2;
+}
+
+#up{
+    left: 38%;
+    top: 18%;
+}
+
+#left{
+    left: 18%;
+    top: 18%;
+}
+
+#down{
+    left: 38%;
+    top: 18%;
+
+
+}
+
+#right{
+    left: 58%;
+    bottom: 22%;
+}
+
+
+/* Action buttons */
+.buttons{
+    position: relative;
+
+    background-color: black;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+}
+
+#triangle{
+    left: 40%;
+    top: 18%;
+}
+
+#square{
+    top: 20%;
+    left: 20%
+}
+
+#cross{
+    left: 40%;
+    top: 20%;
+}
+
+#circle{
+    bottom: 20%;
+    left: 60%
+}
+
+
+/* System buttons */
+
+.middleButtons{
+    position: relative;
+
+    background-color: black;
+    width: 2em;
+    height: 1em;
+}
+
+#select{
+    bottom: 815%;
+    left: 36%;
+
+    z-index: 4;
+}
+
+#start{
+    background-color: transparent;
+
+    bottom: 825%;
+    left: 58%;
+    width: 0; 
+    height: 0; 
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+    
+    border-left: 2em solid black;
+    z-index: 4;
+}
+
+#analog{
+    bottom: 800%;
+    left: 47.5%;
+
+    z-index: 4;
+}
